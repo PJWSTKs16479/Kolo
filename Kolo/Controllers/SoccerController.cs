@@ -17,7 +17,7 @@ namespace Kolo.Controllers
         [HttpGet("{IdChampionship}/teams}")]
         public IActionResult GetTeams(int IdChampionship)
         {
-            List<Team> TeamList = new List<Team>;
+            List<Team> TeamList = new List<Team>();
 
 
             using (var con = new SqlConnection("data source=db-mssql;initial catalog=s16479;integrated security=true;MultipleActiveResultSets=true"))
